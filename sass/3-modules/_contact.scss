@@ -1,0 +1,90 @@
+.section-contact {
+    background: #e7e8eb46;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+
+    &__messages {
+        font-size: 8rem;
+        font-weight: 900;
+        width: 4000px;
+        display: flex;
+        white-space: nowrap;
+        animation: slide 17s linear infinite;
+        
+        &__message {
+            display: flex;
+            align-items: center;
+            width: 1300px;
+            bottom: 0;
+
+            &::after {
+                content: '';
+                margin: 0 1em;
+                width: 45px;
+                height: 45px;
+                background: black;
+            }
+        }
+    }
+
+    &__links {
+        position: absolute;
+        a {
+            font-size: 1.3rem;
+            margin-right: 0.8em;
+        }
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-3200px);
+    }
+}
+
+@media(min-width: 0px) {
+    .section-contact {
+        &__messages {
+            &__message {
+                font-size: 6rem;
+            }
+        }
+
+        &__links {
+            position: absolute;
+            bottom: 2em;
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+
+@media(min-width: 748px) {
+    .section-contact {
+        &__messages {
+            &__message {
+                font-size: 7rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1281px) {
+    .section-contact {
+        &__messages {
+            &__message {
+                font-size: 8rem;
+            }
+        }
+    }
+}

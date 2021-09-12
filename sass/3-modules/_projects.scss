@@ -5,7 +5,6 @@
     .projects {
          &__project {
             margin: 0 auto;
-            margin-bottom: 7em;
               
             &__img-container {
                 display: flex;
@@ -46,6 +45,7 @@
 .projects-rs {
     flex-basis: 45%;
 }
+
 
 
 @media(min-width: 0px) {
@@ -157,7 +157,7 @@
             justify-content: space-between;
 
             &__project {
-                margin-bottom: 18em;
+                margin-top: 18em;
                 &__img-container {
                     margin: 0 auto;
                     margin-bottom: 4em;
@@ -194,4 +194,8 @@
             }
         }
     }
+}
+
+img:hover {
+    object-fit: scale-down;
 }
