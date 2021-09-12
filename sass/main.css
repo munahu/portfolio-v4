@@ -1,0 +1,162 @@
+html {
+  font-family: 'Satoshi', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 0px) {
+  .wrapper {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  height: 100vh;
+}
+
+nav {
+  height: 30vh;
+}
+
+.hero {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__name {
+  font-weight: 900;
+}
+
+.hero__title {
+  font-weight: 300;
+}
+
+@media (min-width: 0px) {
+  .hero__name {
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+    margin-bottom: 0.2em;
+  }
+  .hero__title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 370px) {
+  .hero__name {
+    font-size: 3.1rem;
+  }
+  .hero__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 748px) {
+  .hero__name {
+    font-size: 5.8rem;
+  }
+  .hero__title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  .hero__name {
+    margin-top: 0.5em;
+    font-size: 8.2rem;
+  }
+  .hero__title {
+    font-size: 2.6rem;
+  }
+}
+
+.scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll span {
+  margin-bottom: 1em;
+  -webkit-animation: opacity 1s ease-in infinite alternate;
+          animation: opacity 1s ease-in infinite alternate;
+}
+
+.scroll::after {
+  content: '';
+  height: 90px;
+  width: 1px;
+  background: #000000;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.section--projects {
+  border: 2px solid blue;
+}
+
+.section--projects .projects__project img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+.section--projects {
+    border: 2px solid blue;
+    .projects {
+        &__project {
+            // border: 2px solid red;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 0px) {
+}
+
+@media(min-width: 370px) {
+    
+}
+
+@media(min-width: 748px) {
+    
+}
+
+@media(min-width: 1281px) {
+    
+}
