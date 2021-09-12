@@ -1,27 +1,197 @@
+
 .section--projects {
-    border: 2px solid blue;
+    padding: 10vh 0;
+
     .projects {
-        &__project {
-            // border: 2px solid red;
-            img {
-                width: 100%;
+         &__project {
+            margin: 0 auto;
+            margin-bottom: 7em;
+              
+            &__img-container {
+                display: flex;
+                position: relative;
+    
+                img {
+                    object-fit: cover;
+                }
+            }
+            
+            &__text {
+                &__title {
+                    font-weight: 500;
+                }
+    
+                &__stack {
+                    font-style: italic;
+                    font-weight: 500;
+                }
+    
+                &__description {
+                    letter-spacing: 0.2px;
+                    margin-bottom: 2em;
+                    width: 85%;
+                }
+    
+                &__links {
+                    a {
+                        border: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.projects-ls,
+.projects-rs {
+    flex-basis: 45%;
+}
+
+
+@media(min-width: 0px) {
+    .section--projects {
+        padding: 10vh 0;
+        .projects {
+            &__project {
+                margin-bottom: 7em;
+
+                &__img-container {
+                    margin: 0 auto;
+                    margin-bottom: 2em;
+                
+                    img {
+                        box-shadow: 5vw 4vw 0px black;
+                        width: 92%;
+                        height: 92%;
+                    }
+                }
+                
+                &__text {
+                    margin-top: 0.8em;
+
+                    &__title {
+                        font-size: 1.9rem;
+                    }
+        
+                    &__stack {
+                        margin-top: 0.5em;
+                        font-size: 0.9rem;
+
+                        span {
+                            margin-right: 3px;
+                        }
+                    }
+        
+                    &__description {
+                        letter-spacing: 0.2px;
+                        margin-bottom: 2em;
+                        width: 100%;
+                    }
+        
+                    &__links {
+                        width: 100%;
+                        a {
+                            padding: 0.3em 0.5em;
+                            margin-right: 0.9em;
+                            letter-spacing: 0.3px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 
-@media(min-width: 0px) {
+@media(min-width: 454px) {
+    .section--projects {
+
+        .projects {
+            &__project {
+                &__img-container {
+                    margin: 0 auto;
+                    margin-bottom: 4em;
+
+                
+                    img {
+                        box-shadow: 5vw 4vw 0px black;
+                        width: 92%;
+                        height: 92%;
+                        max-height: 400px;
+                        max-width: 500px;
+                    }
+                }
+                
+                &__text {
+                    &__title {
+                        font-size: 2.4rem;
+                    }
+        
+                    &__stack {
+                        span {
+                            font-size: 1.1rem;
+                        }
+                    }
+        
+                    &__description {
+                        font-size: 1.2rem;
+                    }
+        
+                    &__links {
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media(min-width: 370px) {
-    
-}
+@media(min-width: 989px) {
+    .section--projects {
 
-@media(min-width: 748px) {
-    
-}
+        .projects {
+            display: flex;
+            justify-content: space-between;
 
-@media(min-width: 1281px) {
-    
+            &__project {
+                margin-bottom: 18em;
+                &__img-container {
+                    margin: 0 auto;
+                    margin-bottom: 4em;
+
+                
+                    img {
+                        box-shadow: 2.5em 1.8em 0px black;
+                        width: 92%;
+                        height: 92%;
+                        max-height: 400px;
+                        max-width: 500px;
+                    }
+                }
+                
+                &__text {
+                    &__title {
+                        font-size: 2.4rem;
+                    }
+        
+                    &__description {
+                        font-size: 1.2rem;
+                    }
+        
+                    &__links {
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+            .projects-rs {
+                margin-top: 15em;
+            }
+        }
+    }
 }
